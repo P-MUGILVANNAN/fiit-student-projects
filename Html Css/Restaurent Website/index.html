@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savory Bites | Fine Dining Experience</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Savory Bites</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#hours">Hours</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Savory Bites</h1>
+            <p>Experience culinary excellence in the heart of the city</p>
+            <a href="#reservation" class="btn">Reserve a Table</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <h2 class="section-title">Our Menu</h2>
+        <div class="menu-container">
+            <!-- Appetizers -->
+            <div class="menu-category">
+                <h3>Appetizers</h3>
+                <div class="menu-cards">
+                    <div class="menu-card">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd" alt="Bruschetta">
+                        <div class="card-content">
+                            <h4>Tomato Bruschetta</h4>
+                            <p>Toasted bread topped with tomatoes, garlic, and fresh basil</p>
+                            <span class="price">$8.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947" alt="Calamari">
+                        <div class="card-content">
+                            <h4>Crispy Calamari</h4>
+                            <p>Lightly fried squid served with lemon aioli</p>
+                            <span class="price">$12.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Main Courses -->
+            <div class="menu-category">
+                <h3>Main Courses</h3>
+                <div class="menu-cards">
+                    <div class="menu-card">
+                        <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b" alt="Steak">
+                        <div class="card-content">
+                            <h4>Filet Mignon</h4>
+                            <p>8oz tender beef filet with roasted vegetables and red wine reduction</p>
+                            <span class="price">$32.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641" alt="Salmon">
+                        <div class="card-content">
+                            <h4>Grilled Salmon</h4>
+                            <p>Atlantic salmon with lemon butter sauce and seasonal vegetables</p>
+                            <span class="price">$24.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8" alt="Pasta">
+                        <div class="card-content">
+                            <h4>Truffle Pasta</h4>
+                            <p>Homemade fettuccine with wild mushrooms and black truffle cream</p>
+                            <span class="price">$18.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Desserts -->
+            <div class="menu-category">
+                <h3>Desserts</h3>
+                <div class="menu-cards">
+                    <div class="menu-card">
+                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb" alt="Chocolate Cake">
+                        <div class="card-content">
+                            <h4>Chocolate Lava Cake</h4>
+                            <p>Warm chocolate cake with a molten center, served with vanilla ice cream</p>
+                            <span class="price">$9.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="https://images.unsplash.com/photo-1558312651-8539ec9f822e" alt="Cheesecake">
+                        <div class="card-content">
+                            <h4>New York Cheesecake</h4>
+                            <p>Classic cheesecake with berry compote</p>
+                            <span class="price">$8.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Opening Hours -->
+    <section id="hours" class="hours-section">
+        <div class="hours-container">
+            <h2 class="section-title">Opening Hours</h2>
+            <div class="hours-grid">
+                <div class="hour-day">
+                    <span>Monday - Thursday</span>
+                    <span>11:00 AM - 10:00 PM</span>
+                </div>
+                <div class="hour-day">
+                    <span>Friday - Saturday</span>
+                    <span>11:00 AM - 11:00 PM</span>
+                </div>
+                <div class="hour-day">
+                    <span>Sunday</span>
+                    <span>10:00 AM - 9:00 PM</span>
+                </div>
+            </div>
+            <p class="hours-note">Kitchen closes 30 minutes before restaurant closing time</p>
+        </div>
+    </section>
+
+    <!-- Contact & Reservation Form -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="reservation-form">
+                <h2 class="section-title">Make a Reservation</h2>
+                <form id="reservation">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Time</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Number of Guests</label>
+                        <select id="guests" name="guests" required>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4">4 People</option>
+                            <option value="5">5 People</option>
+                            <option value="6">6 People</option>
+                            <option value="7">7+ People</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="special">Special Requests</label>
+                        <textarea id="special" name="special" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Book Table</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h2 class="section-title">Contact Us</h2>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>123 Gourmet Avenue<br>Foodie City, FC 12345</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>(555) 123-4567</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>info@savorybites.com</p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Map -->
+    <section class="map-section">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215209132828!2d-73.9878449241646!3d40.74844097138992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1629997979143!5m2!1sen!2sus" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+        </iframe>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Savory Bites</div>
+            <p>&copy; 2023 Savory Bites Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple mobile menu toggle
+        document.querySelector('.burger').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

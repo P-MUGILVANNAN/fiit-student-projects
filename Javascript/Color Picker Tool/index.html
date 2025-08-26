@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Color Picker Tool</h1>
+        
+        <div class="color-controls">
+            <div class="color-input">
+                <label for="colorPicker">Select a color:</label>
+                <input type="color" id="colorPicker" value="#ff0000">
+                <button id="randomColor">Random Color</button>
+            </div>
+            
+            <div class="color-display">
+                <div class="color-box" id="colorBox"></div>
+                <div class="color-values">
+                    <div>
+                        <span>HEX: </span>
+                        <span id="hexValue">#ff0000</span>
+                        <button class="copy-btn" data-target="hexValue">Copy</button>
+                    </div>
+                    <div>
+                        <span>RGB: </span>
+                        <span id="rgbValue">rgb(255, 0, 0)</span>
+                        <button class="copy-btn" data-target="rgbValue">Copy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="color-history">
+            <h2>Color History</h2>
+            <div id="historyContainer"></div>
+            <button id="clearHistory">Clear History</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

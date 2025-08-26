@@ -1,0 +1,28 @@
+.quiz-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.list-group-item {
+  text-align: left;
+  margin-bottom: 5px;
+  border-radius: 5px !important;
+}
+
+.list-group-item:hover {
+  cursor: pointer;
+}
+
+.progress {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  border-radius: 15px 15px 0 0 !important;
+}

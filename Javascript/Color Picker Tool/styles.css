@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #444;
+    margin: 20px 0 10px;
+}
+
+.color-controls {
+    margin-bottom: 30px;
+}
+
+.color-input {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.color-input label {
+    font-weight: bold;
+}
+
+.color-input input[type="color"] {
+    width: 60px;
+    height: 40px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#randomColor {
+    background-color: #2196F3;
+}
+
+#randomColor:hover {
+    background-color: #0b7dda;
+}
+
+#clearHistory {
+    background-color: #f44336;
+    margin-top: 10px;
+}
+
+#clearHistory:hover {
+    background-color: #d32f2f;
+}
+
+.copy-btn {
+    background-color: #ff9800;
+    padding: 5px 10px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.copy-btn:hover {
+    background-color: #e68a00;
+}
+
+.color-display {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.color-box {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    background-color: #ff0000;
+}
+
+.color-values {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.color-values div {
+    display: flex;
+    align-items: center;
+}
+
+.color-values span {
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.color-history {
+    margin-top: 30px;
+}
+
+#historyContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.history-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.history-color {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.history-value {
+    font-size: 12px;
+    margin-top: 5px;
+    font-family: monospace;
+}
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeInOut 2s ease-in-out;
+    opacity: 0;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: translateY(-20px); }
+    20% { opacity: 1; transform: translateY(0); }
+    80% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-20px); }
+}
