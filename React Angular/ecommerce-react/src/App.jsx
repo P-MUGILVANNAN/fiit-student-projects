@@ -3,6 +3,7 @@ import { Navbar } from './components/Navbar';
 import { ProductList } from './components/ProductList';
 import { Cart } from './components/Cart';
 import { CartProvider } from './context/CartContext';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route path="/cart" element={<Cart />} />
           </Routes>
         </div>
+        <Footer />
       </CartProvider>
     </Router>
   );
